@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Todo app</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <div class="background-image"></div>
+      <div id="wrapper">
+        <!--HEADER SECTION-->
+        <div id="header">
+          <h1>Todo</h1>
+          <img src="./images/icon-sun.svg" alt="" class="themeswitcher" />
+        </div>
+        <!--CREATE TASK FORM-->
+        <div class="todo-input">
+          <form id="addtodo">
+            <input
+              name="todo-input"
+              id="todo-input"
+              type="text"
+              placeholder="Create a new todo..."
+            />
+            <!-- <button></button> -->
+          </form>
+        </div>
+        <div id="todoslist">
+          <ul id="list">
+          </ul>
+        </div>
+        <!---filters-->
+        <div class="footer">
+          <div class="count"><span></span> items left</div>
+          <!---filter-->
+          <div class="filters">
+            <label>
+              <input type="radio" name="filter" id="all" checked />
+              <span>All</span>
+            </label>
+            <label>
+              <input type="radio" name="filter" id="active" />
+              <span>Active</span>
+            </label>
+            <label>
+              <input type="radio" name="filter" id="completed" />
+              <span>Completed</span>
+            </label>
+          </div>
+          <!--clear-->
+          <div class="clear">Clear Completed</div>
+        </div>
+        <!--drag and drop-->
+        <div id="draganddrop">
+          <p>Drag and drop to reorder list</p>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

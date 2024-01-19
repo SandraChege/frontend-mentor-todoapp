@@ -1,0 +1,114 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: hsl(235, 21%, 11%);
+  font-size: 18px;
+  font-family: "Josefin Sans", sans-serif;
+  height: 100vh;
+}
+.background-image {
+  background: url("images/bg-desktop-dark.jpg") no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 40vh;
+  transition: all 0.3s;
+}
+#wrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 800px;
+  margin: -200px auto 0 auto;
+}
+#header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+  width: 100%;
+}
+#header h1 {
+  color: #fff;
+  letter-spacing: 15px;
+  text-transform: uppercase;
+}
+#header img {
+  cursor: pointer;
+  height: 30px;
+  width: 30px;
+}
+.todo-input form {
+  display: flex;
+  position: relative;
+}
+.todo-input input{
+  width: 100%;
+  background-color: hsl(235, 24%, 19%);
+  color: hsl(233, 11%, 84%);
+  border-radius: 10px;
+  padding: 10px 45px;
+  border: none;
+  outline: none;
+  height: 3.5rem;
+}
+.todo-input button {
+  border: 1px solid hsl(234, 11%, 52%);
+  outline: none;
+  background: none;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  position: absolute;
+  align-self: center;
+  margin-left: 15px;
+}
+.todo-input input::placeholder {
+  color: hsl(234, 11%, 52%);
+}
+/* #todoslist {
+  list-style: none;
+} */
+#todoslist ul {
+  margin-top: 15px;
+}
+#todoslist ul li {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid hsl(233, 18%, 38%);
+  background-color: hsl(235, 24%, 19%);
+  padding: 20px;
+  color: hsl(233, 11%, 84%);
+  width: 100%;
+}
+/*FOOTER*/
+.footer {
+  color: hsl(233, 14%, 35%);
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background-color: hsl(235, 24%, 19%);
+  color: hsl(234, 11%, 52%);
+  padding: 16px;
+  border-radius: 10px;
+}
+.filters {
+  display: flex;
+}
+.filters input[type="radio"] {
+  opacity: 0;
+}
+.filters label:hover {
+  color: hsl(236, 33%, 92%);
+}
+.filters input[type="radio"]:checked ~ span {
+  color: hsl(220, 98%, 61%);
+}
+/*DRAG AND DROP*/
+#draganddrop{
+  position: absolute;
+  bottom: 10px;
+  color: hsl(233, 14%, 35%);
+  align-self: center;
+}
